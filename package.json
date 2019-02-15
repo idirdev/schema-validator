@@ -1,0 +1,19 @@
+{
+  "name": "@idirdev/schema-validator",
+  "version": "1.0.0",
+  "description": "Validate JavaScript objects against JSON schemas",
+  "main": "src/index.js",
+  "author": "idirdev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idirdev/schema-validator.git"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "node --test tests/"
+  }
+}
