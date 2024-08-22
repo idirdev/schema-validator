@@ -1,0 +1,19 @@
+{
+  "name": "schema-validator",
+  "version": "1.0.0",
+  "description": "Lightweight, type-safe JSON schema validation library with chainable API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["schema", "validation", "typescript", "json", "validator"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "@types/node": "^18.11.18"
+  }
+}
