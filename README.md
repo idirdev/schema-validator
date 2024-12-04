@@ -157,3 +157,33 @@ const result = validate(schema, badData);
 ## License
 
 MIT
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+`schema-validator` est une bibliothèque de validation JSON légère et type-safe pour TypeScript, avec une API chaînable et sans dépendances externes. Elle collecte toutes les erreurs de validation (pas seulement la première) et fournit un suivi complet des chemins pour les erreurs imbriquées.
+
+### Installation
+```typescript
+import { s, validate } from 'schema-validator';
+```
+
+### Utilisation
+```typescript
+const userSchema = s.object({
+  name: s.string().min(2).max(50).build(),
+  email: s.string().email().build(),
+  age: s.number().int().positive().build(),
+}).strict().build();
+
+const result = validate(userSchema, { name: 'Alice', email: 'alice@example.com', age: 30 });
+if (result.success) {
+  console.log('Valide :', result.data);
+} else {
+  console.log('Erreurs :', result.errors);
+}
+```
+
+Consultez la documentation anglaise ci-dessus pour la référence complète de l'API.
